@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    background: #e9e9e9;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #e9e9e9);
+    background: linear-gradient(to right, #FFFFFF, #e9e9e9); 
+}
+
+#logo h1 {
+    font-family: 'Inter';
+    font-size: 2.5em;
+}
+#logo {
+    text-align: center;
+    filter: drop-shadow(2px 2px 2px gray);
+}
+#input-section {
+    margin-top: 50px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    filter: drop-shadow(2px 2px 2px gray);
+}
+#part1 {
+    width: 25px;
+}
+#part2 {
+    width: 25px;
+}
+#part3 {
+    width: 25px;
+}
+#part4 {
+    width: 25px;
+}
+#subnetpart {
+    width: 25px;
+}
+#calculate-button {
+    background-color: white;
+    border: 1px solid black;
+    font-family: 'Inter';
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    filter: drop-shadow(2px 2px 2px gray);
+}
+#calculate-button:hover {
+    transform: scale(1.1);
+}
+#result-section {
+    text-align: center;
+    margin-top: 25px !important;
+    margin: auto;
+    font-size: 1.25em;
+    background-color: black;
+    opacity: 0.8;
+    border-radius: 20px;
+    width: 700px;
+    filter: drop-shadow(5px 5px 5px black);
+    visibility: hidden;
+}
+#result-section p {
+    font-family: 'Inter';
+    color: white;
+}
+#table-section table {
+    border: 1px solid black;
+}
+#table-section tr td {
+    border: 1px solid black;
+}
+hr {
+    margin-top: 25px !important;
+    margin: auto;
+    width: 350px;
+    text-align: center;
+    border: 1px solid black;
+    filter: drop-shadow(2px 2px 2px gray);
+}
+#help-block {
+    white-space: nowrap;
+}
+#available-hosts {
+    display: inline-block;
+}
+#help-sign {
+    display: inline-block;
+    filter: invert();
+    width: 15px;
+    height: 15px;
+}
+#footer-text {
+    position: absolute;
+    top: 97.5%;
+    margin-left: 5px;
+    font-family: 'Inter';
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}

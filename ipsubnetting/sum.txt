@@ -1,0 +1,40 @@
+Input - 192.168.0.62/24
+
+
+Prekonvertované na binárnu sústavu
+
+11000000.10101000.0.111110
+
+
+Musia byť doplnené nuly aby mala každá časť 8 čísel (pomocou for loops)
+
+11000000.10101000.00000000.00111110
+                    ^ doplnených 7 núl aby bola dĺžka 8
+
+
+Celá adresa sa spojí do kopy do jednej premennej bez bodiek
+
+11000000101010000000000000111110
+
+
+Definujem si substring(0, <subnetmaska>) čo nám skopíruje časť v dĺžke masky
+
+
+110000001010100000000000
+
+
+Chceme, aby mala celá adresa 32 čísel aby sa dala rozdeliť na 4 časti
+Preto to zase dáme to for loopu
+
+
+11000000101010000000000000000000
+
+
+Adresu potom rozdelíme pomocou substringu na 4 časti
+
+11000000.10101000.00000000.00000000
+
+
+Potom premeníme naspäť na desiatkovú sústavu a dostaneme sieťovú adresu
+
+192.168.0.0

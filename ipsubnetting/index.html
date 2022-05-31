@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>IPv4 Subnetting</title>
+</head>
+<body>
+    <div id="top-container">
+        <div id="logo">
+            <h1>
+                IPv4 Subnetting Calculator
+            </h1>
+        </div>
+    </div>
+    <div id="center-container">
+        <div id="input-section">
+            <input id="part1" type="text">
+            <p><b>.</b></p>
+            <input id="part2" type="text">
+            <p><b>.</b></p>
+            <input id="part3" type="text">
+            <p><b>.</b></p>
+            <input id="part4" type="text">
+            <p><b>/</b></p>
+            <input id="subnetpart" type="text">
+            <button id="calculate-button" onclick="calculate()">
+                Subnet
+            </button>
+        </div>
+        <hr>
+        <div id="result-section">
+            <p id="unprocessed-binary"></p>
+            <p id="joined-binary"></p>
+            <p id="network-address"></p>
+            <p id="firstusable-address"></p>
+            <p id="lastusable-address"></p>
+            <p id="broadcast-address"></p>
+            <p id="subnet-mask"></p>
+            <div id="help-block">
+                <p id="available-hosts"></p>
+                <img id="help-sign" src="helpmark.png" title="Add 2 to get all hosts in a network."/>
+            </div>
+            <p id="ip-status"></p>
+        </div>
+    </div>
+    <div id="bottom-container">
+        <footer>
+            <a id="footer-text" href="https://github.com/horizon7272">Created by Dominik. © 2022</a>
+        </footer>
+    </div>
+</body>
+</html>
